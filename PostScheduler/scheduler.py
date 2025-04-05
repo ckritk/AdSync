@@ -58,7 +58,25 @@ def post_to_facebook(image_url, caption, page_id, access_token):
     return 'id' in result
 
 
-# --- Scheduler Loop ---
+def post_to_youtube(video_url, caption):
+    try:
+        local_path = "temp_video.mp4"
+        print("⬇️ Downloading video from Google Drive...")
+        r = requests.get(video_url)
+        with open(local_path, "wb") as f:
+            f.write(r.content)
+
+        print("📤 Uploading to YouTube...")
+        video_id = upload_video(local_path, title=caption)
+        print(f"✅ YouTube upload successful! Video ID: {video_id}")
+
+        os.remove(local_path)
+        return True
+    except Exception as e:
+        print("❌ YouTube upload failed:", e)
+        return False
+
+
 def run_scheduler():
     print("⏳ Scheduler started. Watching for scheduled posts...")
 
@@ -89,13 +107,18 @@ def run_scheduler():
                         else:
                             print(f"❌ Failed to post to Facebook")
 
+                    elif platform == "YouTube":
+                        success = post_to_youtube(media_url, post['caption'])
+                        if success:
+                            print(f"✅ Posted to YouTube as {post_type}")
+                        else:
+                            print(f"❌ Failed to post to YouTube")
+
                 mark_post_as_posted(post['_id'])
                 print("✅ Marked as posted in MongoDB.\n")
 
         time.sleep(30)
 
 
-# --- Run ---
 if __name__ == "__main__":
     run_scheduler()
- 
