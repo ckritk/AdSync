@@ -54,7 +54,7 @@ def clean_topics(topic_str):
     return cleaned_topics
 
 # Load CSV
-df = pd.read_csv(r"C:\Users\karpa\Pappu\SSN files\hacks, workshop, paps\Codeher 25\Top 100 Influencers\all-countries\instagram_data_all-countries.csv")
+df = pd.read_csv("instagram_data_all-countries.csv")
 
 # Transform data
 df[["name", "handle"]] = df["NAME"].apply(lambda x: pd.Series(split_name(x)))
