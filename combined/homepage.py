@@ -1,15 +1,13 @@
 import streamlit as st
 
-# Page Config
 st.set_page_config(page_title="Influencer Marketing Platform", layout="centered")
 
-# Initialize session state
 if 'page' not in st.session_state:
     st.session_state.page = "home"
 if 'influencer' not in st.session_state:
     st.session_state.influencer = None
 
-# Page Navigation
+
 def home():
     st.title("Welcome to Influencer Marketing Hub")
     st.write("---")
