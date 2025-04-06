@@ -1,5 +1,4 @@
-# Influencer Marketing Automation Platform
-
+# AdSync
 A full-stack platform enabling brands and influencers to collaborate seamlessly with smart influencer matching, automated post scheduling, and end-to-end campaign tracking. Built to save time, improve targeting, and deliver measurable results.
 
 ---
