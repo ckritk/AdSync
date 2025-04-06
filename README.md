@@ -2,9 +2,7 @@
 
 A full-stack platform enabling brands and influencers to collaborate seamlessly with smart influencer matching, automated post scheduling, and end-to-end campaign tracking. Built to save time, improve targeting, and deliver measurable results.
 
-<p align="center">
-  <img src="Screenshots/demo.gif" alt="Platform Demo" width="800"/>
-</p>---
+---
 
 ## Features
 
