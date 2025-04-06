@@ -33,6 +33,9 @@ A full-stack platform enabling brands and influencers to collaborate seamlessly 
 ###  Database
 - **MongoDB** – Stores influencer profiles, post data, campaign metrics
 
+###  Security
+- **werkzeug** – Used to encrypt the password and store in the database
+
 ###  Task Scheduling
 - **Celery** – Handles scheduled post execution
 - **Redis** – Message broker for Celery tasks
