@@ -7,10 +7,10 @@ from google_drive_utils import upload_to_drive
 import requests
 
 
-FB_PAGE_ID = "586630267872672"
-FB_ACCESS_TOKEN = "EAASk9ttsLZAcBO8gzNlng59Rh50mZBRZBznj5DPS41tMdkGGMi2JFS2lU8EVnRoECH9m58wfl4olJABJW2Xcve6nQFiD6ZA940GQz3VO0gDQok0HkcuduOABqJB7L05YaqzhPZB5VCtbTxeXzlhjyioqT9usk9FSPMOIZAW0ztfYu6DyishJcsRw3XQBS7YMBO"
-IG_USER_ID = "17841454580044711"
-IG_ACCESS_TOKEN = "EAASk9ttsLZAcBOZBqAqOKl4jbx7sZCaZB8WfdV5ZCAPfft8m149jlyi5bQjwCpZB02DHdx5j87c8dDi3mwq9UJluTo0eZBu7oq9xPEpP5mrDnE4POKNvy5uppZBbt2CE3EmKbZCZB3lPCpTHZB8r5OjK08SmCDSBIhe0AjzrtcWGrfXVohATC29asDTLQ8S"
+FB_PAGE_ID = ""
+FB_ACCESS_TOKEN = ""
+IG_USER_ID = ""
+IG_ACCESS_TOKEN = ""
 
 def post_to_instagram(image_url, caption, ig_user_id, access_token):
     print(f"📤 Creating media container for Instagram...")
