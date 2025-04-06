@@ -1,6 +1,0 @@
-streamlit
-pymongo
-pandas
-pillow
-python-dotenv
-requests
