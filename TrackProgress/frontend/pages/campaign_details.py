@@ -241,6 +241,11 @@ with st.expander("Add Conversion URL"):
                 st.error("Error connecting to backend.")
                 st.text(str(e))
 
+st.divider()
+st.title("Search Similar Influencers")
+import similar_influencers
+similar_influencers.show()
+
 # ---- FIND INFLUENCERS ---- 
 def show_influencer_finder(db):
     """Show influencer search and filtering"""
